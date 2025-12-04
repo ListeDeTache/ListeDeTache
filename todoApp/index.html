@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="To-Do List simple et efficace. Organisez vos tâches, définissez des priorités et ne manquez plus jamais une échéance. Démarrez gratuitement, sans inscription !">
+  <title>Liste des taches - Todolist</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title">TodoApp</h1>
+    <div class="btn_theme">
+      <div class="h">00</div>:
+      <div class="m">00</div>:
+      <div class="s">00</div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div>
+      <input type="text" id="newTaskInput" placeholder="Add a new task...">
+      <button type="button" onclick="addTask()">Add</button>
+    </div>
+
+    <h2 style="color: #fff;">My tasks</h2>
+    <ul id="activeTasksList" class="task-list" style="margin: 10px 10px; list-style-type: none;"></ul>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
